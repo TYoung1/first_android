@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택을 시작하시겠습니까?"
+        />
+    <Switch
+        android:id="@+id/ChkAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작함"/>
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 자동차는 ? "
+        android:visibility="invisible"/>
+    <RadioGroup
+        android:id="@+id/Rgroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/Rdoa3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a3"/>
+        <RadioButton
+            android:id="@+id/Rdoa4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a4"/>
+        <RadioButton
+            android:id="@+id/Rdoa5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a5"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgCar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btnend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="종료"/>
+    <Button
+        android:id="@+id/btnfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="처음으로"/>
+    <Button
+        android:id="@+id/btncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="카운터"/>
+    <Button
+        android:id="@+id/btnrotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회전"/>
+</LinearLayout>
